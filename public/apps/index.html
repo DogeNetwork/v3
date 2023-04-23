@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+ background-image: url('/background.png');
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+
+ font-size: 25px;
+}
+      .container {
+        max-width: 750px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      
+      
+      .button-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+      }
+      
+      button {
+        border: none;
+        border-radius: 40px;
+        margin: 10px;
+        padding: 20px;
+        background-color: #afafaf56;
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      button:hover {
+        transform: scale(1.1);
+        border-style: solid;
+        border-color: #ffffffa8;
+      }
+      
+      button img {
+        width: 100%;
+        height: 100%;
+      }
+      
+  
+  .button-container > button {
+    width: calc(25% - 20px);
+  }
+  
+  .button-container > button:nth-child(4n+1) {
+    margin-left: 0;
+  }
+  
+  .button-container > button:nth-child(n+5) {
+    margin-top: 20px;
+  }
+}
+}
+.intro {
+  opacity: 0;
+  animation: fade-in 2s ease forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+      /* CSS styles for the bottom navigation bar */
+      .bottom-nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 50%;
+        background-color: rgba(156, 156, 156, 0); /* semi-transparent color */
+        text-align: center;
+        padding: 10px 0;
+        font-size: 23px;
+        backdrop-filter: blur(2px); /* adds a blurry effect */
+        -webkit-text-stroke: 1px #5e5e5e;
+      }
+      </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="/style.css">
+      <link rel="icon" href="/doge.jpg">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles-backup-index.css">
+      <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+      <style>@font-face{
+  font-family: mosk;
+  src: url(/mosk.ttf);
+}</style>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="/uv/uv.bundle.js"></script>
+      <script src="/uv/uv.config.js"></script>
+      <script src="/index.js"></script>
+<title>Apps - Doge Unblocker</title>
+  </head>
+  <div class="intro">
+  <link rel="stylesheet" type="text/css" href="style.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="logo.png">
+</head>
+<body>
+  <nav id="myTopnav">
+         <a href="https://discord.gg/sWPHCdxCPU" class="active" style="font-family:mosk;" target="new">Join our Discord</a><a href="/" class="active" style="font-family:mosk;" target="new">Return Home</a>
+         
+         
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </nav>
+  <center>
+    <h1 style="font-family:mosk;color:white;">Apps (Beta)</h1>
+  <div class="container">
+    <div class="button-container">
+      <a href="discord">
+      <button>
+        <img src="discord.png">
+      </button>
+        </a>
+      <a href="geforce">
+      <button>
+        <img src="geforcenow.png">
+      </button>
+        </a>
+      <a href="crazygames">
+      <button>
+        <img src="crazygames.png">
+      </button>
+        </a>
+      
+      <!-- repeat for the remaining buttons -->
+    </div>
+  </div>
+</div>
+</body>
+</html>
