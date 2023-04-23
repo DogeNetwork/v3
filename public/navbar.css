@@ -1,0 +1,41 @@
+nav {
+  margin-top: 10.5px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+nav a {
+  float: right;
+  margin-left: 5.5px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 15.5px;
+}
+
+nav a:hover {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  transition: 1.5s;
+  border-radius: 10px;
+}
+
+nav a.active {
+  background-color: #4c24ff;
+  color: white;
+  border-radius: 10px;
+  
+}
+
+nav a.active:hover {
+  background-color: #2f00ff;
+  color: white;
+  transition: 1.5s;
+}
+
+nav .icon {
+  display: none;
+}
+   
