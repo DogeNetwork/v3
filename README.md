@@ -1,3 +1,14 @@
 <h2>Doge Unblocker</h2>
-<p>A frontend made by Derpman#0858, using Ultraviolet as the backend.</p>
-<p>Join our support server:</p><a href="https://discord.com/invite/sWPHCdxCPU">https://discord.gg/sWPHCdxCPU</a>
+<p>Doge Unblocker is a blazing fast proxy service used to bypass internet restrictions. Made by students, for students.</p>
+<p>Please join our community on Discord if you are confused about how to use/deploy Doge Unblocker at <strong><a href="https://discord.com/invite/sWPHCdxCPU">https://discord.gg/dogeunblocker</a></strong>
+
+
+
+<h2>How to Deploy:</h2>
+<h3>Linux Terminal:</h3>
+<code>git clone https://github.com/dogeproxy/app</code>
+<br>
+<code>cd app</code>
+<br>
+<code>npm start</code>
+<h3>Render</h3>
