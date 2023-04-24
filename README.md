@@ -15,7 +15,7 @@
 <img src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/render.svg"></img></a>
 <br>
 <h1></h1>
-<p>Please join our community on Discord if you are confused about how to use/deploy Doge Unblocker at <strong><a href="https://discord.com/invite/sWPHCdxCPU">https://discord.gg/dogeunblocker</a></strong>
+<p>Please join our community on Discord if you are confused about how to use/deploy Doge Unblocker at <strong><a href="https://discord.gg/schoolsucks">https://discord.gg/dogeunblocker</a></strong>
 
 
 
