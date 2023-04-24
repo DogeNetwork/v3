@@ -3,3 +3,4 @@
     name: doge
     env: nodejs
     plan: free
+    startCommand: npm index.js
