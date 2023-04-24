@@ -1,6 +1,6 @@
   services:
   - type: web
     name: doge
-    env: nodejs
+    env: node
     plan: free
     startCommand: npm index.js
