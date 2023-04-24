@@ -12,4 +12,5 @@
 <br>
 <code>npm start</code>
 <h3>Render</h3>
-[![Deploy to Render](https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/render.svg)](https://render.com/deploy?repo=https://github.com/NebulaServices/Nebula)
+<a href"https://render.com/deploy?repo=https://github.com/dogeproxy/app"><img src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/render.svg"></a>
+<strong>Note:</strong> Wait until the console says <code>"starting service with npm index.js"</code>, then open the site.
