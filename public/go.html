@@ -1,0 +1,9 @@
+<iframe src="/404.html" id="blockedlmao" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
+    <script>
+      window.onload = function() {
+        let encodedUrl = sessionStorage.getItem("encodedUrl");
+        // add the prefix "/service/" to the encoded URL
+        encodedUrl = "/service/" + encodedUrl;
+        document.querySelector("#blockedlmao").src = encodedUrl;
+      };
+    </script>

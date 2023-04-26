@@ -1,7 +1,7 @@
 importScripts('/uv/uv.bundle.js');
 importScripts('/uv/uv.config.js');
 
-class UVServiceWorker extends EventEmitter {     
+class UVServiceWorker extends EventEmitter {   
     constructor(config = __uv$config) {
         super();
         if (!config.bare) config.bare = '/bare/';
@@ -29,8 +29,6 @@ class UVServiceWorker extends EventEmitter {
                 'accept-encoding', 
                 'connection',
                 'content-length',
-                'content-type',
-                'user-agent',
             ],
         };
         this.method = {
@@ -46,11 +44,16 @@ class UVServiceWorker extends EventEmitter {
             ],
         };  
         this.config = config;
+        this.browser = Ultraviolet.Bowser.getParser(self.navigator.userAgent).getBrowserName();
+
+        if (this.browser === 'Firefox') {
+            this.headers.forward.push('user-agent');
+            this.headers.forward.push('content-type');
+        };
     };
     async fetch({ request }) {
         if (!request.url.startsWith(location.origin + (this.config.prefix || '/service/'))) {
             return fetch(request);
-            alert("Please wait for the site to load.");
         };
         try {
 
@@ -80,7 +83,7 @@ class UVServiceWorker extends EventEmitter {
             if (request.referrer && request.referrer.startsWith(location.origin)) {
                 const referer = new URL(ultraviolet.sourceUrl(request.referrer));
 
-                if (ultraviolet.meta.url.origin !== referer.origin && request.mode === 'cors') {
+                if (requestCtx.headers.origin || ultraviolet.meta.url.origin !== referer.origin && request.mode === 'cors') {
                     requestCtx.headers.origin = referer.origin;
                 };
 
@@ -90,13 +93,12 @@ class UVServiceWorker extends EventEmitter {
             const cookies = await ultraviolet.cookie.getCookies(db) || [];
             const cookieStr = ultraviolet.cookie.serialize(cookies, ultraviolet.meta, false);
 
-            const browser = Ultraviolet.Bowser.getParser(self.navigator.userAgent).getBrowserName();
-
-            if (browser === 'Firefox' && !(request.destination === 'iframe' || request.destination === 'document')) {
+            if (this.browser === 'Firefox' && !(request.destination === 'iframe' || request.destination === 'document')) {
                 requestCtx.forward.shift();
             };
 
             if (cookieStr) requestCtx.headers.cookie = cookieStr;
+            requestCtx.headers.Host = requestCtx.url.host;
 
 
             const reqEvent = new HookEvent(requestCtx, null, null);
@@ -266,6 +268,7 @@ class RequestContext {
                 'x-bare-port': this.url.port || (this.url.protocol === 'https:' ? '443' : '80'),
                 'x-bare-headers': JSON.stringify(this.headers),
                 'x-bare-forward-headers': JSON.stringify(this.forward),
+                'userKey': userKey,
             },
             redirect: this.redirect,
             credentials: this.credentials,
