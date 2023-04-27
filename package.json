@@ -1,7 +1,7 @@
 {
-  "name": "dogeunblcoer",
-  "version": "4.1.4",
-  "description": "goofy ahh",
+  "name": "doge-unblocker",
+  "version": "1.0",
+  "description": "A blazing-fast proxy crafted just for school.",
   "type": "module",
   "engines": {
     "npm": ">=7.0.0",
