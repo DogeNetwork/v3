@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
+<html><head>
     <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +22,28 @@ body {
         justify-content: center;
         margin-top: 10px;
       }
-      
+      .square_btn img {
+width: 75px;
+height: 75px;
+}
+.square_btn {
+    display: inline-block;
+    text-align: center;
+    height: 75px;
+    width: 80px;
+    text-decoration: none;
+    color: #67c5ff;
+    border: solid 2px transparent;
+    border-radius: 90px;
+    transition: .4s;
+    img: 50%;
+}
+
+.square_btn:hover {
+    background: transparent;
+    color: white;
+transform: scale(1.1); 
+}
       button {
         border: none;
         border-radius: 40px;
@@ -103,11 +122,11 @@ body {
       <script src="/index.js"></script>
 <title>Apps - Doge Unblocker</title>
   </head>
-  <div class="intro">
-  <link rel="stylesheet" type="text/css" href="style.css" rel="stylesheet">
+  <body><div class="intro">
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/x-icon" href="logo.png">
-</head>
-<body>
+
+
   <nav id="myTopnav">
         <a href="https://discord.gg/sWPHCdxCPU" class="active" style="font-family:mosk;background-color:#343c44;" target="new">Join our Discord</a><a href="javascript:(function()%7B(function()%20%7B%0A%20%20%20%20let%20url%20%3D%20(window.location.href%2C%20%22%2Fapp.html%22)%3B%20%20%20%20%0A%20%20%20%20var%20w%20%3D%20window.open(%22about%3Ablank%22%2C%20%22_blank%22%2C%20%22status%3Dno%2Ctoolbar%3Dno%2Clocation%3Dno%2Cdirectories%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dyes%2Cwidth%3D9999999%2Cheight%3D99999%22)%0A%20%20%20%20w.document.write('%3Ciframe%20style%3D%22position%3A%20absolute%3Btop%3A%200px%3Bbottom%3A%200px%3Bright%3A%200px%3Bwidth%3A%20100%25%3Bborder%3A%20none%3Bmargin%3A%200%3Bpadding%3A%200%3Boverflow%3A%20hidden%3Bz-index%3A%2099999%3Bheight%3A%20100%25%3B%22%20src%3D%22app.html%22%3E%3C%2Fiframe%3E')%3B%0A%7D)()%3B%7D)()%3B" class="active" style="font-family:mosk;background-color:#343c44">AboutBlank Spoof</a><a href="/" class="active" style="font-family:mosk;background-color:#343c44;">Return Home</a>
          
@@ -119,30 +138,19 @@ body {
     <h1 style="font-family:mosk;color:white;">Apps (Beta)</h1>
   <div class="container">
     <div class="button-container">
-      <a href="discord">
-      <button>
-        <img src="discord.png">
-      </button>
-        </a>
-      <a href="geforce">
-      <button>
+      <a href="discord" class="square_btn">
+        <img src="discord.png" width="20">
+      </a>
+    <a href="geforce" class="square_btn">
         <img src="geforcenow.png">
-      </button>
-        </a>
-      <a href="crazygames">
-      <button>
+      </a>
+      <a href="crazygames" class="square_btn">
         <img src="crazygames.png">
-      </button>
-        </a>
-      <a href="chatgpt">
-      <button>
-        <img src="gpt.jpg">
-      </button>
-        </a>
-      
+      </a>
       <!-- repeat for the remaining buttons -->
     </div>
   </div>
-</div>
-</body>
-</html>
+</center></div>
+
+
+</body></html>
