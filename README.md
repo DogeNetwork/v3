@@ -15,7 +15,9 @@
 <img src="https://raw.githubusercontent.com/BinBashBanana/deploy-buttons/main/buttons/remade/render.svg"></img></a>
 <br>
 <h1></h1>
-<p>Please join our community on Discord if you are confused about how to use/deploy Doge Unblocker at <strong><a href="https://discord.gg/sWPHCdxCPU">https://discord.gg/dogeunblocker</a></strong>
+<h3>Join our community for more proxy links!</h3>
+
+[![Join us on Discord](https://invidget.switchblade.xyz/sWPHCdxCPU?theme=dark)](https://discord.gg/sWPHCdxCPU)
 
 
 
