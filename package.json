@@ -2,9 +2,9 @@
   "dependencies": {
     "node-static": "^0.7.11"
   },
-  "name": "uv-app",
+  "name": "doge-unblocker",
   "version": "1.0.0",
-  "description": "Ultraviolet instance",
+  "description": "Doge Unblocker is a W",
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
