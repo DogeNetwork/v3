@@ -1,110 +1,134 @@
 <html><head>
-    <style>
-body {
+<style>
+
+      body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
- background-image: url('/background.png');
- background-size: cover;
- background-repeat: no-repeat;
+  background-color: #262626;
 }
 
- font-size: 25px;
-}
-      .container {
-        max-width: 750px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      
-      
-      .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      .square_btn img {
-width: 75px;
-height: 75px;
-}
-.square_btn {
-    display: inline-block;
-    text-align: center;
-    height: 75px;
-    width: 80px;
-    text-decoration: none;
-    color: #67c5ff;
-    border: solid 2px transparent;
-    border-radius: 90px;
-    transition: .4s;
-    img: 50%;
+nav {
+  margin-top: 10.5px;
+  margin-right: 10px;
+  overflow: hidden;
 }
 
-.square_btn:hover {
-    background: transparent;
-    color: white;
-transform: scale(1.1); 
+nav a {
+  float: right;
+  margin-left: 5.5px;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 15.5px;
 }
-      button {
-        border: none;
-        border-radius: 40px;
-        margin: 10px;
-        padding: 20px;
-        background-color: #afafaf56;
-        transition: transform 0.3s ease-in-out;
-      }
-      
-      button:hover {
-        transform: scale(1.1);
-        border-style: solid;
-        border-color: #ffffffa8;
-      }
-      
-      button img {
-        width: 100%;
-        height: 100%;
-      }
-      
+
+nav a:hover {
+  background-color: #0f0f0f;
+  color: #ffffff;
+  transition: 1.5s;
+  border-radius: 10px;
+}
+
+nav a.active {
+  background-color: #4c24ff;
+  color: white;
+  border-radius: 10px;
   
-  .button-container > button {
-    width: calc(25% - 20px);
-  }
-  
-  .button-container > button:nth-child(4n+1) {
-    margin-left: 0;
-  }
-  
-  .button-container > button:nth-child(n+5) {
-    margin-top: 20px;
-  }
-}
-}
-.intro {
-  opacity: 0;
-  animation: fade-in 2s ease forwards;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+nav a.active:hover {
+  background-color: #2f00ff;
+  color: white;
+  transition: 1.5s;
+}
+
+nav .icon {
+  display: none;
+}
+
+input {
+border: none;
+padding: 20px 50px;
+background-color: black;
+color:white;
+outline: none;
+font-family:calibri;
+font-size: 15px;
+text-align: center;
+transition: 0.5s;
+border-radius: 53px;
+opacity: 70%;
+}
+
+input:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 555px) {
+  nav a:not(:first-child) {display: none;}
+  nav a.icon {
+    float: right;
+    display: block;
   }
 }
 
-      /* CSS styles for the bottom navigation bar */
-      .bottom-nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        background-color: rgba(156, 156, 156, 0); /* semi-transparent color */
-        text-align: center;
-        padding: 10px 0;
-        font-size: 23px;
-        backdrop-filter: blur(2px); /* adds a blurry effect */
-        -webkit-text-stroke: 1px #5e5e5e;
-      }
+@media screen and (max-width: 555px) {
+  nav.responsive {position: relative;}
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+h1 {
+  font-size: 45.5px;
+}
+
+#card1, #card2, #card3, #card4 {
+  outline: 3.5px solid #004be0;
+  text-align: center;
+  floating: center;
+  width: 5.5%;
+  height: 150px;
+  color: white;
+  padding: 4.5rem;
+  border-radius: 5.5px;
+    transition: 0.5s;
+}
+
+#card1:hover, #card2:hover, #card3:hover, #card4:hover{
+  background-color:  #004be0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#featured {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 45.5px;
+  display: grid;
+  grid-gap: 1rem;
+  display: flex;
+flex-direction: row;
+  justify-content: center;
+}
+.clock {
+    position: absolute;
+    width: 350px;
+    top: 98%;
+    text-align: right;
+    left: 25px;
+    transform: translateX(-50%) translateY(-50%);
+    color: #3d7eff;
+    font-size: 25px;
+    letter-spacing: 3px;
+      
       </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" href="/style.css">
