@@ -77,12 +77,6 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
         __uv.meta = window.parent.__uv.meta;
     };
 
-    if (window.EventTarget) {
-        __uv.addEventListener = window.EventTarget.prototype.addEventListener;
-        __uv.removeListener = window.EventTarget.prototype.removeListener;
-        __uv.dispatchEvent = window.EventTarget.prototype.dispatchEvent;
-    };
-
     // Storage wrappers
     client.nativeMethods.defineProperty(client.storage.storeProto, '__uv$storageObj', {
         get() {
@@ -157,7 +151,6 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
         methodPrefix + 'url',
         methodPrefix + 'modifiedStyle',
         methodPrefix + 'config',
-        methodPrefix + 'dispatched',
         'Ultraviolet',
         '__uvHook',
     ];
@@ -443,7 +436,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
             client.element.setAttribute.call(that, __uv.attributePrefix + '-attr-href', val)
             target.call(that, __uv.rewriteUrl(val));
         },
-    }); 
+    });
 
     client.element.hookProperty([HTMLScriptElement, HTMLAudioElement, HTMLVideoElement,  HTMLMediaElement, HTMLImageElement, HTMLInputElement, HTMLEmbedElement, HTMLIFrameElement, HTMLTrackElement, HTMLSourceElement], 'src', {
         get: (target, that) => {
@@ -891,32 +884,6 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
         });
     });
 
-    // Proper hash emulation.
-    if (!!window.window) {
-        __uv.addEventListener.call(window, 'hashchange', event => {
-            if (event.__uv$dispatched) return false;
-            event.stopImmediatePropagation();
-            const hash = window.location.hash;
-            client.history.replaceState.call(window.history, '', '', event.oldURL);
-            __uv.location.hash = hash;
-        });
-    };
-
-    client.location.on('hashchange', (oldUrl, newUrl, ctx) => {
-        if (ctx.HashChangeEvent && client.history.replaceState) {
-            client.history.replaceState.call(window.history, '', '', __uv.rewriteUrl(newUrl));
-
-            const event = new ctx.HashChangeEvent('hashchange', { newURL: newUrl, oldURL: oldUrl });
-
-            client.nativeMethods.defineProperty(event, methodPrefix + 'dispatched', {
-                value: true,
-                enumerable: false,
-            }); 
-
-            __uv.dispatchEvent.call(window, event);
-        };
-    });
-
     // Hooking functions & descriptors
     client.fetch.overrideRequest();
     client.fetch.overrideUrl();
@@ -929,7 +896,7 @@ async function __uvHook(window, config = {}, bare = '/bare/') {
     // client.element.overrideQuerySelector();
     client.node.overrideBaseURI();
     client.node.overrideTextContent();
-    client.attribute.overrideNameValue();
+    client.attribute.override();
     client.document.overrideDomain();
     client.document.overrideURL();
     client.document.overrideDocumentURI();
