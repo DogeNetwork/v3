@@ -1,221 +1,42 @@
-
-<html><head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="doge.jpg">   
+<link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <style>
-
-      body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #262626;
-}
-
-nav {
-  margin-top: 10.5px;
-  margin-right: 10px;
-  overflow: hidden;
-}
-
-nav a {
-  float: right;
-  margin-left: 5.5px;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-size: 15.5px;
-}
-
-nav a:hover {
-  background-color: #0f0f0f;
-  color: #ffffff;
-  transition: 1.5s;
-  border-radius: 10px;
-}
-
-nav a.active {
-  background-color: #4c24ff;
-  color: white;
-  border-radius: 10px;
-  
-}
-
-nav a.active:hover {
-  background-color: #2f00ff;
-  color: white;
-  transition: 1.5s;
-}
-
-nav .icon {
-  display: none;
-}
-
-input {
-border: none;
-padding: 20px 76px;
-background-color: black;
-color:white;
-outline: none;
-font-family:calibri;
-font-size: 15px;
-text-align: center;
-transition: 0.5s;
-border-radius: 20px;
-opacity: 70%;
-}
-
-input:hover {
-  transform: scale(1.1);
-}
-@media screen and (max-width: 555px) {
-  nav a:not(:first-child) {display: none;}
-  nav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 555px) {
-  nav.responsive {position: relative;}
-  nav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  nav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-h1 {
-  font-size: 45.5px;
-}
-
-#card1, #card2, #card3, #card4 {
-  outline: 3.5px solid #004be0;
-  text-align: center;
-  floating: center;
-  width: 5.5%;
-  height: 150px;
-  color: white;
-  padding: 4.5rem;
-  border-radius: 5.5px;
-    transition: 0.5s;
-}
-
-#card1:hover, #card2:hover, #card3:hover, #card4:hover{
-  background-color:  #004be0;
-  cursor: pointer;
-  transition: 0.5s;
-}
-#featured {
-  max-width: 1000px;
-  margin: 0 auto;
-  margin-top: 45.5px;
-  display: grid;
-  grid-gap: 1rem;
-  display: flex;
-flex-direction: row;
-  justify-content: center;
-}
-.clock {
-    position: absolute;
-    width: 350px;
-    top: 98%;
-    text-align: right;
-    left: 25px;
-    transform: translateX(-50%) translateY(-50%);
-    color: #3d7eff;
-    font-size: 25px;
-    letter-spacing: 3px;
-      
-      </style>
-      <link rel="icon" href="doge.jpg">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-      @font-face{
-  font-family: mosk;
-  src: url(mosk.ttf);
-}
-.button-6 {
-  align-items: center;
-  background-color: #262626;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-color: #;
-  border-radius: .70rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.button-6:hover,
-.button-6:focus {
-  border-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: #393939;
-}
-
-.button-6:hover {
-  transform: translateY(-1px);
-}
-
-.button-6:active {
-  background-color: #ff7300;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
-}
-      </style>
-      <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
-      <style>@font-face{
-  font-family: mosk;
-  src: url(mosk.ttf);
-}</style>
-      <style>
 body {
-      background-image: url('/background.png');
-      background-size: 99% 100% ;
+margin: 0;
+      background-image: url('background.png');
+      background-size: cover ;
+background-repeat: no-repeat;
             }
-      </style>
-
-      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</style>
       <title>Doge Unblocker</title>
    </head>
    <body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="">
+<nav id="mytopnav">
+<br>
+<a href="https://discord.gg/sWPHCdxCPU" target="new"><button class="button-6">Discord</button></a>
+<a href="javascript:(function()%7B(function()%20%7B%0A%20%20%20%20let%20url%20%3D%20(window.location.href%2C%20%22%2Fapp.html%22)%3B%20%20%20%20%0A%20%20%20%20var%20w%20%3D%20window.open(%22about%3Ablank%22%2C%20%22_blank%22%2C%20%22status%3Dno%2Ctoolbar%3Dno%2Clocation%3Dno%2Cdirectories%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dyes%2Cwidth%3D9999999%2Cheight%3D99999%22)%0A%20%20%20%20w.document.write('%3Ciframe%20style%3D%22position%3A%20absolute%3Btop%3A%200px%3Bbottom%3A%200px%3Bright%3A%200px%3Bwidth%3A%20100%25%3Bborder%3A%20none%3Bmargin%3A%200%3Bpadding%3A%200%3Boverflow%3A%20hidden%3Bz-index%3A%2099999%3Bheight%3A%20100%25%3B%22%20src%3D%22app.html%22%3E%3C%2Fiframe%3E')%3B%0A%7D)()%3B%7D)()%3B" class="active"><button class="button-6">Blanker</button></a>
+<a href="games" class="active"><button class="button-6">Games</button></a>
+<a href="apps"><button class="button-6">Apps</button></a>
+<p><img src="doge.jpg" style="width:22px;height:22px;"> Doge Unblocker</p>
+         
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </nav>
       <div style="padding-left:16px; text-align: center; color: white;margin:80px;">
-      <img src="/doge.jpg">
-            <div data-m="bounce-right" data-m-delay="0.2">
-<h1 style="font-family:mosk;">Doge Unblocker</h1>
-<p style="font-family:mosk;font-style:italic;">Many happy, such speed. Wow, very doge.</p>
-            </div>
              <div data-m="reveal-right" data-m-delay="0.5" data-m-duration="2">
       <br>
       <form id="searchbar" action="/go.html" method="POST">
-         <input type="text" name="url" class="form__input" id="name" style="font-family:mosk;" placeholder="Enter URL or search">
+         <input type="text" name="url" class="form__input" id="name" style="font-family:mosk;font-size:16px;" placeholder="Surf the web freely...">
       </form>
-<a href="apps" class="active" style="margin:5px;font-family:mosk;background-color:#343c44;"><button class="button-6">Apps</button></a><a href="games" class="active" style="margin:5px;font-family:mosk;background-color:#343c44;"><button class="button-6">Games</button></a><a href="https://discord.gg/sWPHCdxCPU" class="active" style="margin:5px;font-family:mosk;background-color:#343c44;" target="new"><button class="button-6">Discord</button><a href="javascript:(function()%7B(function()%20%7B%0A%20%20%20%20let%20url%20%3D%20(window.location.href%2C%20%22%2Fapp.html%22)%3B%20%20%20%20%0A%20%20%20%20var%20w%20%3D%20window.open(%22about%3Ablank%22%2C%20%22_blank%22%2C%20%22status%3Dno%2Ctoolbar%3Dno%2Clocation%3Dno%2Cdirectories%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dyes%2Cwidth%3D9999999%2Cheight%3D99999%22)%0A%20%20%20%20w.document.write('%3Ciframe%20style%3D%22position%3A%20absolute%3Btop%3A%200px%3Bbottom%3A%200px%3Bright%3A%200px%3Bwidth%3A%20100%25%3Bborder%3A%20none%3Bmargin%3A%200%3Bpadding%3A%200%3Boverflow%3A%20hidden%3Bz-index%3A%2099999%3Bheight%3A%20100%25%3B%22%20src%3D%22app.html%22%3E%3C%2Fiframe%3E')%3B%0A%7D)()%3B%7D)()%3B" class="active" style="margin:5px;font-family:mosk;background-color:#343c44"><button class="button-6">Blanker</button>
-            </div>
+</div>
       <div id="section">
         <div id="featured">
         </div>
@@ -226,5 +47,6 @@ body {
       <script src="index.js"></script> 
    
 
-</div><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
-</body></html>
+</div>
+</body>
+</html>
