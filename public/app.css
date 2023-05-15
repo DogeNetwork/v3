@@ -6,7 +6,7 @@
 .button-6 {
   align-items: right;
   border: none;
-  background-color: transparent;
+background-color: transparent;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   box-sizing: border-box;
   color: white;
@@ -30,12 +30,7 @@
   width: auto;
 }
 
-.button-6:hover,
-.button-6:focus {
-  border-color: red;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: #red;
-}
+
 
 .button-6:hover {
   transform: translateY(-1px);
@@ -51,7 +46,7 @@
 
 
 nav {
-  padding: 6px;
+  padding: 8px;
 background-color: transparent;
   overflow: hidden;
 background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
@@ -61,6 +56,7 @@ nav a {
   float: right;
   text-align: center;
   text-decoration: none;
+margin: 3px;
 }
 
 
