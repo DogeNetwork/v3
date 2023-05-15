@@ -1,178 +1,29 @@
 <html><head>
-    <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
- background-image: url('/background.png');
- background-size: cover;
- background-repeat: no-repeat;
-}
-
- font-size: 25px;
-}
-      .container {
-        max-width: 750px;
-        margin: 0 auto;
-        text-align: center;
-      }
-      
-      
-      .button-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 10px;
-      }
-      .square_btn img {
-width: 90px;
-height: 90px;
-}
-.square_btn {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    border: solid 2px transparent;
-    border-radius: 90px;
-    transition: .4s;
-    img: 50%;
-}
-.square_btn:hover {
-    background: transparent;
-    color: white;
-transform: scale(1.1); 
-}
-      button {
-        border: none;
-        border-radius: 40px;
-        margin: 10px;
-        padding: 20px;
-        background-color: #afafaf56;
-        transition: transform 0.3s ease-in-out;
-      }
-      
-      button:hover {
-        transform: scale(1.1);
-        border-style: solid;
-        border-color: #ffffffa8;
-      }
-      
-      button img {
-        width: 100%;
-        height: 100%;
-      }
-      
-  
-  .button-container > button {
-    width: calc(25% - 20px);
-  }
-  
-  .button-container > button:nth-child(4n+1) {
-    margin-left: 0;
-  }
-  
-  .button-container > button:nth-child(n+5) {
-    margin-top: 20px;
-  }
-}
-}
-.intro {
-  opacity: 0;
-  animation: fade-in 2s ease forwards;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-      /* CSS styles for the bottom navigation bar */
-      .bottom-nav {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 50%;
-        background-color: rgba(156, 156, 156, 0); /* semi-transparent color */
-        text-align: center;
-        padding: 10px 0;
-        font-size: 23px;
-        backdrop-filter: blur(2px); /* adds a blurry effect */
-        -webkit-text-stroke: 1px #5e5e5e;
-      }
-      </style>
+    <link rel="stylesheet" href="cssfromindex.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="/style.css">
+      <link rel="stylesheet" href="styles.css">
       <link rel="icon" href="/doge.jpg">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="styles-backup-index.css">
       <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
       <style>@font-face{
   font-family: mosk;
-  src: url(/mosk.ttf);
+  src: url(mosk.ttf);
 }</style>
 <style>
-<style>
-      @font-face{
-  font-family: mosk;
-  src: url(mosk.ttf);
-}
-.button-6 {
-  align-items: center;
-  background-color: #262626;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-color: #;
-  border-radius: .70rem;
-  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: inline-flex;
-  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  justify-content: center;
-  line-height: 1.25;
-  margin: 0;
-  min-height: 3rem;
-  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
-  position: relative;
-  text-decoration: none;
-  transition: all 250ms;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  width: auto;
-}
-
-.button-6:hover,
-.button-6:focus {
-  border-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
-  color: #393939;
-}
-
-.button-6:hover {
-  transform: translateY(-1px);
-}
-
-.button-6:active {
-  background-color: #ff7300;
-  border-color: rgba(0, 0, 0, 0.15);
-  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
-  color: rgba(0, 0, 0, 0.65);
-  transform: translateY(0);
-}
-
-a {
-color:white;
+ p {
 font-family:mosk;
-font-size: 19px;
-text-decoration:none;
+color: white;
+font-size:25px;
+margin-left:20px;
+margin-top: 10px;
 }
-      </style>
+  a {
+font-family:mosk;
+color: white;
+font-size:19px;
+margin-left:10px;
+margin-top: 10px;
+}
 </style>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="/uv/uv.bundle.js"></script>
@@ -180,12 +31,24 @@ text-decoration:none;
       <script src="/index.js"></script>
 <title>Games - Doge Unblocker</title>
   </head>
-  <body><div class="intro">
+  <body>
+<nav id="mytopnav">
+<br>
+<a href="https://discord.gg/sWPHCdxCPU" target="new"><button class="button-6">Discord</button></a>
+<a href="javascript:(function()%7B(function()%20%7B%0A%20%20%20%20let%20url%20%3D%20(window.location.href%2C%20%22%2Fapp.html%22)%3B%20%20%20%20%0A%20%20%20%20var%20w%20%3D%20window.open(%22about%3Ablank%22%2C%20%22_blank%22%2C%20%22status%3Dno%2Ctoolbar%3Dno%2Clocation%3Dno%2Cdirectories%3Dno%2Cresizable%3Dyes%2Cscrollbars%3Dyes%2Cwidth%3D9999999%2Cheight%3D99999%22)%0A%20%20%20%20w.document.write('%3Ciframe%20style%3D%22position%3A%20absolute%3Btop%3A%200px%3Bbottom%3A%200px%3Bright%3A%200px%3Bwidth%3A%20100%25%3Bborder%3A%20none%3Bmargin%3A%200%3Bpadding%3A%200%3Boverflow%3A%20hidden%3Bz-index%3A%2099999%3Bheight%3A%20100%25%3B%22%20src%3D%22app.html%22%3E%3C%2Fiframe%3E')%3B%0A%7D)()%3B%7D)()%3B" class="active"><button class="button-6">Blanker</button></a>
+<a href="games" class="active"><button class="button-6">Games</button></a>
+<a href="apps"><button class="button-6">Apps</button></a>
+<p><img src="doge.jpg" style="width:22px;height:22px;"> Doge Unblocker</p>
+         
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         <i class="fa fa-bars"></i>
+         </a>
+      </nav>
+<div class="intro">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/x-icon" href="logo.png">
 
 
- <a href="/" class="button-6" style="margin:10px;font-family:calibri;font-size:20px;">&lt; Back</a>
   <center>
     <h1 style="font-family:mosk;color:white;margin:15px;">Games</h1>
   <div class="container">
