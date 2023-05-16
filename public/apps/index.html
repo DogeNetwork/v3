@@ -9,12 +9,19 @@
 <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <style>
-body {
-margin: 0;
-      background-image: url('/background.png');
-      background-size: cover ;
-background-repeat: no-repeat;
-            }
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("/background.png");
+  height: 100%; 
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
       a {
 font-family:mosk;
 color: white;
@@ -34,7 +41,7 @@ margin-top: 10px;
       
       <title>Doge Unblocker</title>
    </head>
-   <body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="">
+   <body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="" class="bg">
 <nav id="mytopnav">
 <br>
 <a href="https://discord.gg/sWPHCdxCPU" target="new"><button class="button-6">Discord</button></a>
