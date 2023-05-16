@@ -10,8 +10,21 @@
   src: url(mosk.ttf);
 }</style>
 <style>
-body {
-margin: 0;
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("/background.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
  p {
@@ -35,7 +48,7 @@ margin-top: 10px;
       <script src="/index.js"></script>
 <title>Games - Doge Unblocker</title>
   </head>
-  <body>
+  <body class="bg">
 <nav id="mytopnav">
 <br>
 <a href="https://discord.gg/sWPHCdxCPU" target="new"><button class="button-6">Discord</button></a>
