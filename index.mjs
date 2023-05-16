@@ -19,4 +19,5 @@ server.on('upgrade', (req, socket, head) => {
 	socket.end();
 });
 
-server.listen(process.env.PORT || 80);
+server.listen(process.env.PORT || 8080);
+console.log("Doge Unblocker is listening on port 8080");
