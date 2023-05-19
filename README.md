@@ -8,7 +8,7 @@
 <h3>Local Hosting (Requires Git and Node.js installed):</h3>
 <code>git clone https://github.com/dogeproxy/doge-unblocker</code>
 <br>
-<code>cd app</code>
+<code>cd doge-unblocker</code>
 <br>
 <code>npm start</code>
 <h3>Free Services</h3>
