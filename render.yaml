@@ -1,6 +1,6 @@
  services:
   - type: web
-    name: doge
+    name: unit3project
     env: node
     plan: free
-    startCommand: node index.js
+    startCommand: npm install && npm start
