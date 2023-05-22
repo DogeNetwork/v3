@@ -1,4 +1,4 @@
-<h2>If you forked this repository and would like to recieve updates, please sync your repository or re-fork it.</h2>
+<h1>Looking for Doge Unblocker with now.gg support? <a href="https://github.com/dogenetwork/nowgg">Click here</a></h1>
 <h2>Doge Unblocker</h3>
 <p>Doge Unblocker is a blazing fast proxy service used to bypass internet restrictions. Made by students, for students.</p>
 
