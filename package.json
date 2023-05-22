@@ -1,19 +1,28 @@
 {
-  "dependencies": {
-    "node-static": "^0.7.11"
+  "name": "doge-unblocker",
+  "version": "2.2.1",
+  "description": "Fastest unblocker with now.gg support.",
+  "type": "module",
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=16.0.0"
   },
-  "name": "dogerrrrr",
-  "version": "6.9.6",
-  "description": "Doge Unblocker is a W",
-  "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ."
+    "start": "node src/index.js"
   },
   "keywords": [
     "proxy"
   ],
   "author": "",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@titaniumnetwork-dev/ultraviolet": "^1.0.10",
+    "@tomphttp/bare-server-node": "^1.2.5",
+    "express": "^4.18.2",
+    "ultraviolet-static": "github:titaniumnetwork-dev/Ultraviolet-Static"
+  },
+  "devDependencies": {
+    "eslint": "^8.36.0",
+    "prettier": "^2.8.4"
+  }
 }
