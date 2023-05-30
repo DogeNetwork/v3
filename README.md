@@ -6,7 +6,7 @@
 
 <h2>Link Deployment</h2>
 <h3>Local Hosting (Requires Git and Node.js installed):</h3>
-<code>git clone https://github.com/dogeproxy/doge-unblocker</code>
+<code>git clone https://github.com/dogenetwork/doge-unblocker</code>
 <br>
 <code>cd doge-unblocker</code>
 <br>
