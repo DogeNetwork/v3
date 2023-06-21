@@ -1,5 +1,5 @@
 <h2>Doge Unblocker</h3>
-<p>Welcome to the official repository of Doge Unblocker, the ultimate solution designed exclusively for students. We take immense pride in providing you with an unparalleled proxy service that is unrivaled in speed, security, and reliability.</p>
+<p>Welcome to the official repository of Doge Unblocker, the web proxy designed exclusively for students. We take immense pride in providing you with an unparalleled proxy service that is unrivaled in speed, security, and reliability.</p>
 
 
 
