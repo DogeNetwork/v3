@@ -1,4 +1,4 @@
-# TOMP Bare Server
+## This version of Bare is outdated. I will keep this here in case I need it.
 
 This repository implements the TompHTTP bare server. See the specification [here](https://github.com/tomphttp/specifications/blob/master/BareServerV1.md).
 
