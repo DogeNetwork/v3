@@ -1,23 +1,65 @@
-import Server from './bare/Server.mjs';
-import { readFileSync } from 'fs';
-import http from 'http';
-import nodeStatic from 'node-static';
+import express from "express";
+import http from "node:http";
+import createBareServer from "@tomphttp/bare-server-node";
+import path from "node:path";
+import * as dotenv from "dotenv";
+dotenv.config();
 
-
-const bare =  new Server('/bare/', '');
-const serve = new nodeStatic.Server('public/');
-
+const __dirname = process.cwd();
 const server = http.createServer();
+const app = express(server);
+const bareServer = createBareServer("/bare/");
 
-server.on('request', (request, response) => {
-    if (bare.route_request(request, response)) return true;
-    serve.serve(request, response);
+app.use(express.json());
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+
+app.use(express.static(path.join(__dirname, "public")));
+
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-server.on('upgrade', (req, socket, head) => {
-	if(bare.route_upgrade(req, socket, head))return;
-	socket.end();
+app.get("/apps", (req, res) => {
+  res.sendFile(path.join(__dirname, "apps", "index.html"));
 });
 
-server.listen(process.env.PORT || 8080);
-console.log("Doge Unblocker is listening on port 8080");
+app.get("/games", (req, res) => {
+  res.sendFile(path.join(__dirname, "games", "play.html"));
+});
+
+app.get("/404", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "404.html"));
+});
+
+app.get("/*", (req, res) => {
+  res.redirect("/404");
+});
+
+// Bare Server
+server.on("request", (req, res) => {
+  if (bareServer.shouldRoute(req)) {
+    bareServer.routeRequest(req, res);
+  } else {
+    app(req, res);
+  }
+});
+
+server.on("upgrade", (req, socket, head) => {
+  if (bareServer.shouldRoute(req)) {
+    bareServer.routeUpgrade(req, socket, head);
+  } else {
+    socket.end();
+  }
+});
+
+server.on("listening", () => {
+  console.log(`http://localhost:${process.env.PORT}`);
+});
+
+server.listen({
+  port: process.env.PORT,
+});
