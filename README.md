@@ -5,7 +5,7 @@ Welcome to the official repository of Doge Unblocker, the web proxy designed exc
 </div>
 
 ## Changelog
-You can view our changelog [here.](https://dogenetwork.uk.ms/changelog)
+You can view our changelog [here.](changelog.md)
 ## Link Deployment
 ### Local Hosting (Requires Git and Node.js installed):
 ```
