@@ -1,6 +1,6 @@
 javascript:(function () {
-  var defaultTitle = 'sadas';
-  var defaultIcon = '';
+  var defaultTitle = 'Doge Unblocker';
+  var defaultIcon = 'doge.jpg';
 
   var storedTitle = localStorage.getItem('tabTitle');
   var storedIcon = localStorage.getItem('tabIcon');
@@ -10,7 +10,7 @@ javascript:(function () {
 
   document.title = newTitle;
   var icon = document.querySelector('link[rel="icon"]');
-  icon.setAttribute('href', 'https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png');
+  icon.setAttribute('href', 'newIcon');
 
   localStorage.setItem('tabTitle', newTitle);
   localStorage.setItem('tabIcon', newIcon);
