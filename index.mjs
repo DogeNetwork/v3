@@ -28,7 +28,7 @@ app.get("/apps", (req, res) => {
 });
 
 app.get("/games", (req, res) => {
-  res.sendFile(path.join(__dirname, "games", "play.html"));
+  res.sendFile(path.join(__dirname, "games", "index.html"));
 });
 
 app.get("/404", (req, res) => {
