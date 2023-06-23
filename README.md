@@ -1,6 +1,7 @@
 <div align='center'>
   
-## Doge Unblocker
+![Alt](public/doge.jpg)
+# Doge Unblocker
 Welcome to the official repository of Doge Unblocker, the web proxy designed exclusively for students. We take immense pride in providing you with an unparalleled proxy service that is unrivaled in speed, security, and reliability.
 </div>
 
