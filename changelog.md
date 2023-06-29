@@ -3,6 +3,10 @@
 # Changelog
 </div>
 
+### 6/29/2023
+- Renamed public directory to "static"
+- Fixed package.json
+- Fixed bare server bug
 ### 6/23/2023
 - Fixed buttons on games section
 ### 6/22/2023
