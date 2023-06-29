@@ -1,5 +1,5 @@
 {
-  "name": "dogeunblocker",
+  "name": "education",
   "version": "1.4.3",
   "description": "im gay",
   "type": "module",
@@ -8,7 +8,7 @@
     "node": ">=16.0.0"
   },
   "scripts": {
-    "proxy": "node index.js"
+    "start": "node index.js"
   },
   "keywords": [
     "proxy"
