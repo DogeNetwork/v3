@@ -17,10 +17,10 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "static")));
 
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "static", "index.html"));
 });
 
 app.get("/apps", (req, res) => {
@@ -32,7 +32,7 @@ app.get("/games", (req, res) => {
 });
 
 app.get("/404", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "404.html"));
+  res.sendFile(path.join(__dirname, "static", "404.html"));
 });
 
 app.get("/*", (req, res) => {
