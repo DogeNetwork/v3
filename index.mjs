@@ -57,7 +57,7 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on("listening", () => {
-  console.log(`doge unblocker can be viewed on http://localhost:${process.env.PORT} for local`);
+  console.log(`doge unblocker listening on port 8080 yessir`);
 });
 
 server.listen({
