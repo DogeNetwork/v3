@@ -3,6 +3,9 @@
 # Changelog
 </div>
 
+### 6/30/2023
+- Added Railway deployment method
+- Removed Ultraviolet dependency in package.json to prevent detection
 ### 6/29/2023
 - Renamed public directory to "static"
 - Fixed package.json
