@@ -7,6 +7,8 @@
 - Updated Slope link in Games section
 - Small HTML fixes
 - Updated broken background on loading screen
+- Changed loading icon on loading screen
+- Removed Cancel button on loading screen
 ### 6/30/2023
 - Added Railway deployment method
 - Removed Ultraviolet dependency in package.json to prevent detection
