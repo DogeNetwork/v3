@@ -3,6 +3,10 @@
 # Changelog
 </div>
 
+### 7/1/2023
+- Updated Slope link in Games section
+- Small HTML fixes
+- Updated broken background on loading screen
 ### 6/30/2023
 - Added Railway deployment method
 - Removed Ultraviolet dependency in package.json to prevent detection
