@@ -60,9 +60,7 @@ server.on("upgrade", (req, socket, head) => {
 server.on("listening", () => {
   console.log(`Doge Unblocker is listening on ${process.env.PORT}`);
 });
-server.listen({
-  port: process.env.PORT,
-});
+
 // I removed the process.env.PORT for Back4app support.
 server.listen({
   port: 8080,
