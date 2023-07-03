@@ -184,3 +184,18 @@ a {
   font-family: 'mosk';
   src: url('/assets/fonts/mosk.ttf');
 }
+
+.centered {
+  color: #fff;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+h1 {
+  font-size: 100px;
+  margin: 10px;
+}
