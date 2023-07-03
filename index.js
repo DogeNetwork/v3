@@ -12,4 +12,4 @@ server.on('request', (req, res) => { if (!ultraviolet.requiresRoute(req)) app(re
 app.use(express.static('static', { extensions: ['html'] }));
 app.use((req, res) => res.sendFile(path.join(process.cwd(), './static/404.html')));
 
-server.listen(8080, () => console.log(`doge unblocker listening on port ${server.address().port} yessir`));
+server.listen(process.env.PORT || 8080, () => console.log(`doge unblocker listening on port ${server.address().port} yessir`));
