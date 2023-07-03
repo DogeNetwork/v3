@@ -199,3 +199,16 @@ h1 {
   font-size: 100px;
   margin: 10px;
 }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  font-size: 16px;
+}
+
+.footer>a {
+  font-size: 18px;
+  text-decoration: none;
+}
