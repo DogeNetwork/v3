@@ -1,88 +1,56 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="app.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="doge.jpg">   
-<link rel="stylesheet" href="rightclick.css">
-<link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="rightclick.js"></script>
-<script src="cloakcheck.js"></script>
-<script>
-alert('To access more features, right-click anywhere on the page.');
-</script>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="/assets/img/doge.jpg">
+  <link rel="stylesheet" href="/assets/css/rightclick.css">
+  <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="/assets/js/rightclick.js"></script>
+  <script src="/assets/js/cloakcheck.js"></script>
 
-.bg {
-  /* The image used */
-  background-image: url("background.png");
+  <title>Doge Unblocker</title>
+</head>
 
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-      p {
-font-family:mosk;
-color: white;
-font-size:25px;
-margin-left:20px;
-margin-top: 10px;
-}
-a {
-font-family:mosk;
-color: white;
-font-size:25px;
-margin-left:20px;
-margin-top: 10px;
-}
-</style>
-      
-      <title>Doge Unblocker</title>
-   </head>
-   <body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="" class="bg">
-<div id="contextMenu" class="context-menu">
+<body data-new-gr-c-s-check-loaded="14.1028.0" data-gr-ext-installed="" class="bg">
+  <div id="contextMenu" class="context-menu">
     <div class="context-menu-item" onclick="tabCloak()">Tab Cloak</div>
-<div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
+    <div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
     <div class="context-menu-item">Coming soon!</div>
   </div>
-<nav id="mytopnav">
-<br>
-<a href="https://discord.gg/sWPHCdxCPU" target="new"><button class="button-6">Discord</button></a>
-<a href="games" class="active"><button class="button-6">Games</button></a>
-<a href="apps"><button class="button-6">Apps</button></a>
-<p><img src="doge.jpg" style="width:22px;height:22px;"> Doge Unblocker</p>
-         
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-         <i class="fa fa-bars"></i>
-         </a>
-      </nav>
-      <div style="padding-left:16px; text-align: center; color: white;margin:80px;">
-             <div data-m="reveal-right" data-m-delay="0.5" data-m-duration="2">
+  <nav id="mytopnav">
+    <br>
+    <a href="https://discord.gg/sWPHCdxCPU" target="new"><button class="button-6">Discord</button></a>
+    <a href="/games" class="active"><button class="button-6">Games</button></a>
+    <a href="/apps"><button class="button-6">Apps</button></a>
+    <p><img src="/assets/img/doge.jpg" style="width:22px;height:22px;"> Doge Unblocker</p>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+  <div style="padding-left:16px; text-align: center; color: white;margin:80px;">
+    
+    <div data-m="reveal-right" data-m-delay="0.5" data-m-duration="2">
       <br>
       <form id="searchbar" action="/go.html" method="POST">
-         <input type="text" name="url" class="form__input" id="name" style="font-family:calibri;font-size:20px;" placeholder="Surf the web freely...">
+        <input type="text" name="url" class="form__input" id="name" style="font-family:calibri;font-size:20px;"
+          placeholder="Surf the web freely...">
       </form>
-</div>
-      <div id="section">
-        <div id="featured">
-        </div>
-      </div>
-      
-      <script src="uv/uv.bundle.js"></script>
-      <script src="uv/uv.config.js"></script>
-      <script src="index.js"></script> 
-   
+    </div>
 
-</div>
+    <div id="section">
+      <div id="featured">
+      </div>
+    </div>
+
+    <script src="/uv/uv.bundle.js"></script>
+    <script src="/uv/uv.config.js"></script>
+    <script src="/assets/js/index.js"></script>
+  </div>
 </body>
+
 </html>
