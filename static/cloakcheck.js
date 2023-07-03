@@ -1,4 +1,4 @@
-javascript:(function () {
+(function () {
   var defaultTitle = 'Doge Unblocker';
   var defaultIcon = 'doge.jpg';
 
@@ -10,8 +10,12 @@ javascript:(function () {
 
   document.title = newTitle;
   var icon = document.querySelector('link[rel="icon"]');
-  icon.setAttribute('href', 'newIcon');
-
-  localStorage.setItem('tabTitle', newTitle);
-  localStorage.setItem('tabIcon', newIcon);
+  if (icon) {
+    icon.setAttribute('href', newIcon);
+  } else {
+    icon = document.createElement('link');
+    icon.setAttribute('rel', 'icon');
+    icon.setAttribute('href', newIcon);
+    document.head.appendChild(icon);
+  }
 })();

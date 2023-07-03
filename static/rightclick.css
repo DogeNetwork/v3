@@ -1,0 +1,31 @@
+body {
+    font-family: mosk;
+}
+
+.context-menu {
+      display: none;
+      position: absolute;
+      background-color: #FFF;
+      min-width: 200px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      padding: 8px;
+      border-radius: 8px;
+      z-index: 1;
+    }
+    
+    /* Define the context menu items */
+    .context-menu-item {
+      cursor: pointer;
+      padding: 8px;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Add a line after each context menu item */
+    .context-menu-item:not(:last-child) {
+      border-bottom: 1px solid #ccc;
+    }
+    
+    /* Hover effect on menu options */
+    .context-menu-item:hover {
+      background-color: #f0f0f0;
+    }
