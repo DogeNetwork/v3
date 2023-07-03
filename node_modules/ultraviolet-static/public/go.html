@@ -1,8 +1,0 @@
-<iframe src="/404.html" id="iframeId" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
-    <script>
-      window.onload = function() {
-        let encodedUrl = sessionStorage.getItem("encodedUrl");
-        encodedUrl = "/service/" + encodedUrl;
-        document.querySelector("#iframeId").src = encodedUrl;
-      };
-    </script>
