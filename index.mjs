@@ -16,6 +16,7 @@ app.use(
     extended: true,
   })
 );
+var port = process.env.PORT || 8080
 
 app.use(express.static(path.join(__dirname, "static")));
 
@@ -57,9 +58,10 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on("listening", () => {
-  console.log(`doge unblocker listening on port 8080 yessir`);
+  console.log(`Doge Unblocker is listening on`);
 });
 
+// I removed the process.env.PORT for Back4app support.
 server.listen({
   port: 8080,
 });
