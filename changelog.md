@@ -3,6 +3,10 @@
 # Changelog
 </div>
 
+### 7/2/2023
+- Added Tab Cloaking
+- Added right click menu (moved `about:blank` cloak there)
+- Updated Backend (By <a href="https://github.com/Russel2259">Russel2259</a>)
 ### 7/1/2023
 - Updated Slope link in Games section
 - Small HTML fixes
