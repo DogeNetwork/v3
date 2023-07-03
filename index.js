@@ -15,4 +15,4 @@ app.use((req, res) => {
   res.sendFile(path.join(process.cwd(), './static/404.html'))
 });
 
-server.listen(process.env.PORT || 8080, () => console.log(`doge unblocker listening on port ${server.address().port} yessir`));
+server.listen(8080, () => console.log(`doge unblocker listening on port ${server.address().port} yessir`));
