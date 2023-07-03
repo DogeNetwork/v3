@@ -9,7 +9,7 @@ const __dirname = process.cwd();
 const server = http.createServer();
 const app = express(server);
 const bareServer = createBareServer("/bare/");
-const port = process.env.PORT || 8080
+const PORT = process.env.PORT || 8080
 app.use(express.json());
 app.use(
   express.urlencoded({
@@ -58,10 +58,13 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on("listening", () => {
-  console.log(`Doge Unblocker is listening on`);
+  console.log(`Doge Unblocker is listening on ${process.env.PORT}`);
 });
 
 // I removed the process.env.PORT for Back4app support.
 server.listen({
   port: 8080,
+});
+server.listen({
+  port: process.env.PORT,
 });
