@@ -27,6 +27,7 @@ You can view our changelog [here.](changelog.md)
 ```
 git clone https://github.com/dogenetwork/doge-unblocker
 cd doge-unblocker
+npm install
 npm start
 ```
 ### Web Deployment
