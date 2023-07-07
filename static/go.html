@@ -1,8 +1,8 @@
-<iframe src="" id="iframeId" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
+<iframe src="/loading.html" id="deeznuts" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
 <script>
   window.onload = function () {
-    let encodedUrl = sessionStorage.getItem("destination");
-    encodedUrl = "/service/" + destination;
-    document.querySelector("#iframeId").src = destination;
+    let encodedUrl = sessionStorage.getItem("encodedUrl");
+    encodedUrl = "/service/" + encodedUrl;
+    document.querySelector("#deeznuts").src = encodedUrl;
   };
 </script>
