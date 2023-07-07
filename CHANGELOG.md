@@ -8,6 +8,9 @@
 - Fixed glitchy buttons
 - Added Credits Page (By [Russell2259](https://github.com/Russell2259))
 - Updated Tab Cloaking to cloak Google Drive
+### 7/3/2023
+- Updated Backend to [Easyviolet](https://github.com/Russell2259/Easyviolet) (By [Russell2259](https://github.com/Russell2259))
+- Cleaned up files (By [Russell2259](https://github.com/Russell2259))
 ### 7/2/2023
 - Added Tab Cloaking
 - Added right click menu (moved `about:blank` cloak there)
