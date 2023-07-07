@@ -1,6 +1,6 @@
  services:
   - type: web
-    name: unit3project
+    name: nxtwallpapers
     env: node
     plan: free
     startCommand: npm install && npm start
