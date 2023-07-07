@@ -12,19 +12,8 @@ function showContextMenu(event) {
     }
 
 function tabCloak() {
-  var newTitle = prompt('Tab Cloak\n\nEnter new Tab Title:');
-  var newIcon;
-  switch (prompt('Choose new tab icon:\n\n[1] Google Search\n[2] Google Drive\n[3] Custom URL')) {
-    case '1':
-      newIcon = 'https://www.google.com/favicon.ico';
-      break;
-    case '2':
-      newIcon = 'https://ssl.gstatic.com/images/branding/product/2x/hh_drive_96dp.png';
-      break;
-    case '3':
-      newIcon = prompt('Enter Custom Tab Icon URL:');
-      break;
-  }
+  var newTitle = 'My Drive - Google Drive';
+  var newIcon = 'https://ssl.gstatic.com/images/branding/product/1x/drive_2020q4_32dp.png';
 
   localStorage.setItem('tabTitle', newTitle);
   localStorage.setItem('tabIcon', newIcon);
