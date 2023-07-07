@@ -3,10 +3,15 @@
 # Changelog
 </div>
 
+### 7/7/2023
+- Fixed Apps & Games
+- Fixed glitchy buttons
+- Added Credits Page (By [Russell2259](https://github.com/Russell2259))
+- Updated Tab Cloaking to cloak Google Drive
 ### 7/2/2023
 - Added Tab Cloaking
 - Added right click menu (moved `about:blank` cloak there)
-- Updated Backend (By <a href="https://github.com/Russell2259">Russell2259</a>)
+- Updated Backend (By [Russell2259](https://github.com/Russell2259))
 ### 7/1/2023
 - Updated Slope link in Games section
 - Small HTML fixes
