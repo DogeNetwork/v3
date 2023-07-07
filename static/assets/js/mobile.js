@@ -5,5 +5,5 @@ if (isMobileDevice) {
     alert("Doge Unblocker has detected that you are accessing the website on mobile. Please use a computer instead as this website was not designed for mobile devices.");
   document.write('<iframe src="mobile.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>');
 } else {
-    document.write('<iframe src="app.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>');
+    console.log('I love big tall guys twerking in the shower');
 }
