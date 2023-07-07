@@ -7,7 +7,7 @@
     <script src="/uv/uv.config.js"></script>
     <script src="/index.js"></script>
     <script>
-        window.navigator.serviceWorker.register('/sw.js', {
+        window.navigator.serviceWorker.register('/uv/sw.js', {
             scope: __uv$config.prefix
         }).then(() => {
             location.href=__uv$config.prefix + __uv$config.encodeUrl('https://reddit.com');
