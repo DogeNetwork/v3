@@ -52,10 +52,6 @@ button img {
     margin-top: 20px;
 }
 
-.intro {
-    opacity: 0;
-    animation: fade-in 2s ease forwards;
-}
 
 @keyframes fade-in {
     0% {
