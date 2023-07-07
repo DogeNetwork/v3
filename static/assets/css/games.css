@@ -33,20 +33,6 @@
     transform: scale(1.1);
 }
 
-button {
-    border: none;
-    border-radius: 40px;
-    margin: 10px;
-    padding: 20px;
-    ;
-    transition: transform 0.3s ease-in-out;
-}
-
-button:hover {
-    transform: scale(1.1);
-    border-style: solid;
-    border-color: transparent;
-}
 
 button img {
     width: 100%;
