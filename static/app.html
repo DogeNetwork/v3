@@ -43,7 +43,14 @@
           placeholder="Surf the web freely...">
       </form>
     </div>
+<script>
+  var destination = document.getElementById("destination");
 
+myInput.addEventListener("input", function() {
+  // Save the input value to localStorage
+  localStorage.setItem("destination", destination.value);
+});
+</script>
     <div id="section">
       <div id="featured">
       </div>
