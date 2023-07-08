@@ -4,12 +4,12 @@
   <link rel="icon" href="/assets/img/doge.jpg">
 </head>
 <body>
-<iframe src="loading.html" id="deeznuts" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
+<iframe src="loading.html" id="siteurl" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
 <script>
 window.onload = function () {
       let encodedUrl = sessionStorage.getItem("encodedUrl");
       encodedUrl = "/uv/service/" + encodedUrl;
-      document.querySelector("#deeznuts").src = encodedUrl;
+      document.querySelector("#siteurl").src = encodedUrl;
     };
 </script>
 </body>
