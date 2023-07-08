@@ -6,9 +6,10 @@
 <body>
 <iframe src="" id="deeznuts" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
 <script>
-  window.onload = function () {
-    let deez = localStorage.getItem('encodeduv');
-    document.querySelector("#deeznuts").src = encodeduv;
-  };
+window.onload = function () {
+      let encodedUrl = sessionStorage.getItem("encodedUrl");
+      encodedUrl = "/service/" + encodedUrl;
+      document.querySelector("#deeznuts").src = encodedUrl;
+    };
 </script>
 </body>
