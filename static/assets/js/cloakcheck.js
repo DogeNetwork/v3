@@ -1,6 +1,6 @@
 (function () {
   var defaultTitle = 'Doge Unblocker';
-  var defaultIcon = 'doge.jpg';
+  var defaultIcon = '/assets/img/doge.jpg';
 
   var storedTitle = localStorage.getItem('tabTitle');
   var storedIcon = localStorage.getItem('tabIcon');
