@@ -29,7 +29,10 @@ function toggleSubmenu(event) {
   submenuOpen = !submenuOpen;
 }
 
-  // Hide the submenu after clicking a button
+function handleSubmenuClick() {
+  // testing
+  console.log("Yay button clicked!");
+
   var submenu = document.querySelector('.context-submenu');
   submenu.style.display = 'none';
   submenuOpen = false;
