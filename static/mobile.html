@@ -1,4 +1,5 @@
 <head>
+  <script src="/uv/ev.bundle.js"></script>
   <script src="/uv/uv.bundle.js"></script>
   <script src="/uv/uv.config.js"></script>
   <script src="/assets/js/index.js"></script>
@@ -68,7 +69,7 @@
   <script>
     function myFunction() {
       var theurl = prompt("What url do u want to proxify? don't put https, just put the link");
-      window.navigator.serviceWorker.register('./sw.js', {
+      window.navigator.serviceWorker.register('/uv/sw.js', {
         scope: __uv$config.prefix
       }).then(() => {
         location.href = __uv$config.prefix + __uv$config.encodeUrl("https://" + theurl)
