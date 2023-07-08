@@ -19,11 +19,18 @@
 </head>
 
 <body class="bg">
-  <div id="contextMenu" class="context-menu">
-    <div class="context-menu-item" onclick="tabCloak()">Tab Cloak</div>
-    <div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
-    <div class="context-menu-item">Coming soon!</div>
+<div id="contextMenu" class="context-menu">
+<div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">
+    Tab Cloak
+    <div class="context-submenu">
+      <div class="submenu-item" onclick="tabCloak()">Enable</div>
+      <div class="submenu-separator"></div>
+      <div class="submenu-item" onclick="disableTabCloak()">Disable</div>
+    </div>
   </div>
+  <div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
+  <div class="context-menu-item">Coming soon!</div>
+</div>
 
   <nav id="mytopnav">
     <br>
