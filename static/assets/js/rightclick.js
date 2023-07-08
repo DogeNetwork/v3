@@ -21,7 +21,6 @@ function tabCloak() {
   document.title = newTitle;
   var icon = document.querySelector('link[rel="icon"]');
   icon.setAttribute('href', newIcon);
-alert('Please refresh the page for changes to take effect.');
 }
 
 function openWindow() {
