@@ -3,9 +3,11 @@
 # Changelog
 </div>
 
+### 7/14/2023
+- Added more options to the login page (You can now enable or disable it through the right click menu)
+- Updated right click menu
 ### 7/13/2023
 - Implemented a login page
-
 ### 7/8/2023
 - Added "Enable" and "Disable" buttons for Tab Cloaking (in right click menu)
 ### 7/7/2023
