@@ -11,7 +11,7 @@ ultraviolet.httpServer(server);
 server.on('request', (req, res) => { if (!ultraviolet.requiresRoute(req)) app(req, res) });
 app.use(express.static('static', { extensions: ['html'] }));
 app.get('/app', (req, res) => {
-  res.sendFile(path.join(process.cwd(), './static/unlocked.html'));
+  res.sendFile(path.join(process.cwd(), './static/app.html'));
 });
 app.get('/x', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/loader.html'));
