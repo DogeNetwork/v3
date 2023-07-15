@@ -1,9 +1,9 @@
-    function login() {
+function login() {
       var password = document.getElementById("password").value;
       var errorMessage = document.getElementById("error-message");
 
       if (password === "duontop") {
-        location.href = "/app";
+        location.href = '/app';
         errorMessage.textContent = ""; // Clear error message
       } else {
         errorMessage.textContent = "Incorrect password. Please try again.";
