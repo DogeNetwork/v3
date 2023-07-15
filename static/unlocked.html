@@ -19,18 +19,20 @@
 </head>
 
 <body class="bg">
-<div id="contextMenu" class="context-menu">
-<div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">
-    Tab Cloak
+  <div id="contextMenu" class="context-menu">
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">Tab Cloak ></div>
     <div class="context-submenu">
-      <div class="submenu-item" onclick="tabCloak()">Enable</div>
-      <div class="submenu-separator"></div>
-      <div class="submenu-item" onclick="disableTabCloak()">Disable</div>
+      <div class="context-menu-item" onclick="tabCloak()">Enable</div>
+      <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
     </div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Login Page ></div>
+    <div class="context-submenu">
+      <div class="context-menu-item" onclick="enableLogin()">Enable Login</div>
+      <div class="context-menu-item" onclick="disableLogin()">Disable Login</div>
+    </div>
+    <div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
+    <div class="context-menu-item" onclick="visitLastSite()">Visit Last Site</div>
   </div>
-  <div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
-  <div class="context-menu-item" onclick="visitLastSite()">Last Site You Visited</div>
-</div>
 
   <nav id="mytopnav">
     <br>
