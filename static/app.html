@@ -15,6 +15,21 @@
   <script src="/assets/js/rightclick.js"></script>
   <script src="/assets/js/cloakcheck.js"></script>
   <script src="/assets/js/mobile.js"></script>
+  <script>
+      var loginValue = localStorage.getItem('login');
+
+if (loginValue === 'enablelogin') {
+  var isLoggedIn = localStorage.getItem('pass');
+
+if (isLoggedIn === 'correct') {
+  console.log("User has successfully logged in.");
+} else {
+  location.href = '/';
+}
+} else {
+  console.log("Login is not enabled.");
+}
+  </script>
   <title>Doge Unblocker</title>
 </head>
 

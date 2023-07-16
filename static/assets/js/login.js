@@ -5,6 +5,7 @@ function login() {
       if (password === "duontop") {
         location.href = '/app';
         errorMessage.textContent = ""; // Clear error message
+        localStorage.setItem('pass', 'correct');
       } else {
         errorMessage.textContent = "Incorrect password. Please try again.";
       }
