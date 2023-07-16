@@ -24,6 +24,7 @@ if (loginValue === 'enablelogin') {
 if (isLoggedIn === 'correct') {
   console.log("User has successfully logged in.");
 } else {
+  console.log('User has attempted to bypass login screen. Redirecting.');
   location.href = '/';
 }
 } else {
@@ -40,7 +41,7 @@ if (isLoggedIn === 'correct') {
       <div class="context-menu-item" onclick="tabCloak()">Enable</div>
       <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
     </div>
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Login Page ></div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Authentication ></div>
     <div class="context-submenu">
       <div class="context-menu-item" onclick="enableLogin()">Enable Login</div>
       <div class="context-menu-item" onclick="disableLogin()">Disable Login</div>
