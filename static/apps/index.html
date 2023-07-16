@@ -12,15 +12,25 @@
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="/assets/js/rightclick.js"></script>
   <script src="/assets/js/cloakcheck.js"></script>
+  <script src="/assets/js/mobile.js"></script>
 
   <title>Doge Unblocker</title>
 </head>
 
 <body class="bg">
   <div id="contextMenu" class="context-menu">
-    <div class="context-menu-item" onclick="tabCloak()">Tab Cloak</div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">Tab Cloak ></div>
+    <div class="context-submenu">
+      <div class="context-menu-item" onclick="tabCloak()">Enable</div>
+      <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
+    </div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Authentication ></div>
+    <div class="context-submenu">
+      <div class="context-menu-item" onclick="enableLogin()">Enable Login</div>
+      <div class="context-menu-item" onclick="disableLogin()">Disable Login</div>
+    </div>
     <div class="context-menu-item" onclick="openWindow()">About:Blank Cloak</div>
-    <div class="context-menu-item">Coming soon!</div>
+    <div class="context-menu-item" onclick="visitLastSite()">Visit Last Site</div>
   </div>
 
   <nav id="mytopnav">
