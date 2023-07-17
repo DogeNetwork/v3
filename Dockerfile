@@ -6,4 +6,4 @@ COPY ["package.json", "package-lock.json*", "./"]
 RUN npm install
 EXPOSE 8080
 COPY . .
-CMD [ "node", "index.js" ]
+CMD [ "npm", "start" ]
