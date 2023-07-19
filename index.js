@@ -21,4 +21,4 @@ app.use((req, res) => {
   res.sendFile(path.join(process.cwd(), './static/404.html'))
 });
 
-server.listen(8080, () => console.log(`Doge Unblocker is listening on http://localhost:${server.address().port}`));
+server.listen(8080, () => console.log(`Listening on http://localhost:${server.address().port}`));
