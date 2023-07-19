@@ -3,6 +3,10 @@
 # Changelog
 </div>
 
+### 7/19/2023
+- Cleaned up useless dependencies
+### 7/16/2023
+- Updated login page (more security)
 ### 7/14/2023
 - Added more options to the login page (You can now enable or disable it through the right click menu)
 - Updated right click menu
