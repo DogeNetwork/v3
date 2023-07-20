@@ -3,14 +3,20 @@
       <link rel="stylesheet" href="style.css">
       <link rel="icon" href="/doge.jpg">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://dogelol.derpkiddo.repl.co/style.css">
       <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
       <style>@font-face{
   font-family: mosk;
   src: url(mosk.ttf);
 }</style>
       <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-      <title>Doge Unblocker</title>
       <script src="/assets/js/cloakcheck.js"></script>
    </head>
-   <iframe src="app.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%;"></iframe>
+   <script src="/uv/ev.bundle.js"></script>
+   <iframe src="/loader.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%;"></iframe>
+   <script>
+      setTimeout(() => {
+            var site = Ultraviolet.codec.xor.encode('https://1v1.lol');
+      localStorage.setItem("encodedUrl", site);
+      location.href = "/~";   
+      }, 1000);
+   </script>

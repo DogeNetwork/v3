@@ -13,7 +13,7 @@ app.use(express.static('static', { extensions: ['html'] }));
 app.get('/app', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/app.html'));
 });
-app.get('/x', (req, res) => {
+app.get('/~', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/loader.html'));
 });
 app.use((req, res) => {
