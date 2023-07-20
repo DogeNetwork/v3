@@ -74,7 +74,7 @@ function tabCloak() {
   }
   
   function visitLastSite() {
-  location.href = '/x';
+  location.href = '/~';
   }
 
   function enableLogin() {
