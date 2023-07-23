@@ -3,6 +3,8 @@
 # Changelog
 </div>
 
+### 7/22/2023
+- Added Jstris (Tetris)
 ### 7/19/2023
 - Cleaned up useless dependencies
 ### 7/16/2023
