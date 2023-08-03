@@ -56,16 +56,21 @@ function tabCloak() {
   }
   
   function disableTabCloak() {
-    var newTitle = 'Doge Unblocker';
-    var newIcon = '/assets/img/doge.jpg';
+    var defaultIcon = '/assets/img/doge.jpg';
+    var defaultPageTitle = document.querySelector('title').textContent;
+  
+    var storedIcon = localStorage.getItem('tabIcon');
+  
+    var newTitle = defaultPageTitle;
   
     localStorage.setItem('tabTitle', newTitle);
-    localStorage.setItem('tabIcon', newIcon);
+    localStorage.setItem('tabIcon', storedIcon || defaultIcon);
   
     document.title = newTitle;
     var icon = document.querySelector('link[rel="icon"]');
-    icon.setAttribute('href', newIcon);
+    icon.setAttribute('href', storedIcon || defaultIcon);
   }
+  
   
   function openWindow() {
     let url = window.location.href;
