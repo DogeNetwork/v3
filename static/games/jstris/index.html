@@ -15,6 +15,7 @@ src: url(mosk.ttf);
  <iframe src="/loader.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%;"></iframe>
  <script>
     setTimeout(() => {
+        localStorage.removeItem("encodedUrl");
           var site = Ultraviolet.codec.xor.encode('https://jstris.jezevec10.com');
     localStorage.setItem("encodedUrl", site);
     location.href = "/~";   
