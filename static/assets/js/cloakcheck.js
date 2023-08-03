@@ -8,11 +8,14 @@
   var newTitle = storedTitle || defaultTitle;
   var newIcon = storedIcon || defaultIcon;
 
-  document.title = newTitle;
   var icon = document.querySelector('link[rel="icon"]');
   if (icon) {
     icon.setAttribute('href', newIcon);
   } else {
     console.log('Tab Cloak Disabled');
+  }
+
+  if (storedTitle) {
+    document.title = newTitle;
   }
 })();
