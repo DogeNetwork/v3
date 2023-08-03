@@ -15,12 +15,18 @@
     var newTitle = "Apps | Doge";
     const storedTitle = localStorage.getItem('tabTitle');
 
-if (storedTitle === "My Drive - Google Drive") {
-  console.log('tab claojing enabled');
-} else {
+    if (storedTitle === "Home | Doge") {
   localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "Gms | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "Apps | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else {
+  console.log('fuck me');
 }
     document.title = pagetitle;
+
+
   </script>
   <script src="/assets/js/rightclick.js"></script>
   <script src="/assets/js/cloakcheck.js"></script>
