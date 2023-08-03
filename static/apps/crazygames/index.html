@@ -12,11 +12,5 @@
       <script src="/assets/js/cloakcheck.js"></script>
    </head>
    <script src="/uv/ev.bundle.js"></script>
-   <iframe src="/loader.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%;"></iframe>
-   <script>
-      setTimeout(() => {
-            var site = Ultraviolet.codec.xor.encode('https://crazygames.com');
-      sessionStorage.setItem("encodedUrl", site);
-      location.href = "/~";   
-      }, 1000);
-   </script>
+   <iframe src="app.html" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%;"></iframe>
+</html>
