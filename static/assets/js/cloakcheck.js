@@ -16,6 +16,6 @@
   }
 
   if (storedTitle) {
-    document.title = newTitle;
+    pagetitle = newTitle;
   }
 })();
