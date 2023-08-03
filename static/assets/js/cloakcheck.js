@@ -13,9 +13,6 @@
   if (icon) {
     icon.setAttribute('href', newIcon);
   } else {
-    icon = document.createElement('link');
-    icon.setAttribute('rel', 'icon');
-    icon.setAttribute('href', newIcon);
-    document.head.appendChild(icon);
+    console.log('Tab Cloak Disabled');
   }
 })();
