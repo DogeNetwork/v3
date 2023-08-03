@@ -13,7 +13,13 @@
   <script>
     var pagetitle = "Apps | Doge";
     var newTitle = "Apps | Doge";
-    localStorage.setItem('tabTitle', newTitle);
+    const storedTitle = localStorage.getItem('tabTitle');
+
+if (storedTitle === "My Drive - Google Drive") {
+  console.log('tab claojing enabled');
+} else {
+  localStorage.setItem('tabTitle', newTitle);
+}
     document.title = pagetitle;
   </script>
   <script src="/assets/js/rightclick.js"></script>
