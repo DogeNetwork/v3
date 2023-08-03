@@ -56,21 +56,16 @@ function tabCloak() {
   }
   
   function disableTabCloak() {
-    var defaultIcon = '/assets/img/doge.jpg';
-    var defaultPageTitle = document.querySelector('title').textContent;
-  
-    var storedIcon = localStorage.getItem('tabIcon');
-  
-    var newTitle = defaultPageTitle; // Set the newTitle to the default page title
+    var newTitle = pagetitle;
+    var newIcon = '/assets/img/doge.jpg';
   
     localStorage.setItem('tabTitle', newTitle);
-    localStorage.setItem('tabIcon', storedIcon || defaultIcon);
+    localStorage.setItem('tabIcon', newIcon);
   
+    document.title = newTitle;
     var icon = document.querySelector('link[rel="icon"]');
-    icon.setAttribute('href', storedIcon || defaultIcon); // Ignore changing the icon, as requested
+    icon.setAttribute('href', newIcon);
   }
-  
-  
   
   function openWindow() {
     let url = window.location.href;
