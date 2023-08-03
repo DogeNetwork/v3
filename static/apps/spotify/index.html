@@ -17,7 +17,7 @@
       setTimeout(() => {
             localStorage.removeItem("encodedUrl");
             var site = Ultraviolet.codec.xor.encode('https://spotify.com');
-      localStorage.setItem("encodedUrl", site);
+      sessionStorage.setItem("encodedUrl", site);
       location.href = "/~";   
       }, 1000);
    </script>

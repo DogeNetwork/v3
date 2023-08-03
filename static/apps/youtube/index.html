@@ -16,7 +16,7 @@
    <script>
       setTimeout(() => {
             var site = Ultraviolet.codec.xor.encode('https://youtube.com');
-      localStorage.setItem("encodedUrl", site);
+      sessionStorage.setItem("encodedUrl", site);
       location.href = "/~";   
       }, 1000);
    </script>
