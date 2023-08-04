@@ -3,6 +3,10 @@
 # Changelog
 </div>
 
+### 8/3/2023
+- Added Roblox (Finally!!)
+- Tab title updates
+- Apps & Games page updates
 ### 7/22/2023
 - Added Jstris (Tetris)
 ### 7/19/2023
