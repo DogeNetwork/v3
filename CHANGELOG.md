@@ -5,6 +5,7 @@
 
 ### 8/4/2023
 - Added search bar for Apps & Games section
+- Updated page background
 - Small CSS updates
 ### 8/3/2023
 - Added Roblox (Finally!!)
