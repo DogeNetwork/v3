@@ -29,6 +29,24 @@
       outline: none;
     }
   </style>
+  <script>
+    var pagetitle = "Gms | Doge";
+    var newTitle = "Gms | Doge";
+    
+    const storedTitle = localStorage.getItem('tabTitle');  
+    if (storedTitle === "Home | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "Gms | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+  document.title = "Gms | Doge";
+} else if (storedTitle === "Apps | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else {
+  document.title = "My Drive - Google Drive";
+}
+
+    document.title = pagetitle;
+  </script>
 </head>
 
 <body class="bg">
