@@ -12,13 +12,28 @@
   <script>
     var pagetitle = "Gms | Doge";
     var newTitle = "Gms | Doge";
-    localStorage.setItem('tabTitle', newTitle);
+    
+    const storedTitle = localStorage.getItem('tabTitle');  
+    if (storedTitle === "Home | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "Gms | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+  document.title = "Gms | Doge";
+} else if (storedTitle === "Apps | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else {
+  document.title = "My Drive - Google Drive";
+}
+
     document.title = pagetitle;
   </script>
   <script src="/assets/js/rightclick.js"></script>
   <script src="/assets/js/cloakcheck.js"></script>
   <script src="/assets/js/mobile.js"></script>
   <title>Gms | Doge</title>
+  <script>
+
+  </script>
 </head>
 
 <body class="bg">
