@@ -3,6 +3,9 @@
 # Changelog
 </div>
 
+### 8/4/2023
+- Added search bar for Apps & Games section
+- Small CSS updates
 ### 8/3/2023
 - Added Roblox (Finally!!)
 - Tab title updates
