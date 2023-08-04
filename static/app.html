@@ -31,6 +31,21 @@
 
     document.title = pagetitle;
   </script>
+  <style>
+    input {
+      border-radius: 15px;
+      transition: 0.4s;
+    }
+    
+    input:hover {
+      border-radius: 15px;
+      transition: 0.4s;
+
+    }
+    input:active {
+      width: 690px;
+    }
+  </style>
   <script src="/assets/js/rightclick.js"></script>
   <script src="/assets/js/cloakcheck.js"></script>
   <script src="/assets/js/mobile.js"></script>
@@ -55,12 +70,12 @@ if (isLoggedIn === 'correct') {
 
 <body class="bg">
   <div id="contextMenu" class="context-menu">
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">Tab Cloak ></div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">Tab Cloak</div>
     <div class="context-submenu">
       <div class="context-menu-item" onclick="tabCloak()">Enable</div>
       <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
     </div>
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Authentication ></div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Authentication</div>
     <div class="context-submenu">
       <div class="context-menu-item" onclick="enableLogin()">Enable Login</div>
       <div class="context-menu-item" onclick="disableLogin()">Disable Login</div>
@@ -83,11 +98,11 @@ if (isLoggedIn === 'correct') {
   </nav>
 
   <div style="padding-left:16px; text-align: center; color: white;margin:80px;">
-    <div data-m="reveal-right" data-m-delay="0.5" data-m-duration="2">
+    <div data-m="reveal-right" data-m-delay="0.3" data-m-duration="2">
       <br>
       <form id="searchbar">
         <input type="text" name="url" class="form__input" id="name" style="font-family:calibri;font-size:20px;"
-          placeholder="Surf the web freely...">
+          placeholder="Explore the unblocked web">
         <p style="font-size:14px;">Right-Click to access more features</p>
       </form>
     </div>
@@ -101,6 +116,39 @@ if (isLoggedIn === 'correct') {
       <a href="https://discord.gg/sWPHCdxCPU" target="new">Discord</a>
     </div>
 
+
+    <script>
+      // Function to generate a random number between 0 and 1
+      function getRandomNumber() {
+        return Math.random();
+      }
+
+     /** function setRandomPlaceholder() {
+        const input = document.getElementById("name");
+        const randomNumber = getRandomNumber();
+        if (randomNumber < 0.125) {
+          input.placeholder = "Time to go on Discord!";
+        } else if (randomNumber < 0.25) {
+          input.placeholder = "I hate school";
+        } else if (randomNumber < 0.375) {
+          input.placeholder = "Doge Unblocker is the best";
+        } else if (randomNumber < 0.5) {
+          input.placeholder = "Browse the web freely...";
+        } else if (randomNumber < 0.625) {
+          input.placeholder = "Check out the apps and games section!";
+        } else if (randomNumber < 0.75) {
+          input.placeholder = "Join our Discord!";
+        } else if (randomNumber < 0.875) {
+          input.placeholder = "Why are you here? Go study.";
+        } else {
+          input.placeholder = "Surf the unblocked web...";
+        }
+      }
+
+      setRandomPlaceholder();
+
+      document.getElementById("name").addEventListener("click", setRandomPlaceholder);**/
+    </script>
     <script src="/uv/ev.bundle.js"></script>
     <script src="/assets/js/index.js"></script>
     <script src="/uv/uv.bundle.js"></script>

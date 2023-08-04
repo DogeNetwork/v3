@@ -28,6 +28,26 @@
 
     document.title = pagetitle;
   </script>
+  <style>
+    input {
+      border-radius: 10px;
+      border-width: 0px;
+      text-align: center;
+      width: 300px;
+      height: 1px;
+      outline: none;
+      margin: 20px;
+      transition: 0.4s;
+    }
+
+    input:hover {
+      width: 520px;
+      transition: 0.4s;
+      border-radius: 10px;
+      opacity: 10px;
+      outline: none;
+    }
+  </style>
   <script src="/assets/js/rightclick.js"></script>
   <script src="/assets/js/cloakcheck.js"></script>
   <script src="/assets/js/mobile.js"></script>
@@ -39,12 +59,12 @@
 
 <body class="bg">
   <div id="contextMenu" class="context-menu">
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">Tab Cloak ></div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu(event)">Tab Cloak</div>
     <div class="context-submenu">
       <div class="context-menu-item" onclick="tabCloak()">Enable</div>
       <div class="context-menu-item" onclick="disableTabCloak()">Disable</div>
     </div>
-    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Authentication ></div>
+    <div class="context-menu-item with-submenu" onclick="toggleSubmenu2(event)">Authentication</div>
     <div class="context-submenu">
       <div class="context-menu-item" onclick="enableLogin()">Enable Login</div>
       <div class="context-menu-item" onclick="disableLogin()">Disable Login</div>
@@ -66,9 +86,14 @@
   </nav>
 
 
-  <div>
+  <div class="search-bar" style="display: flex; justify-content: center;">
+    <form id="searchForm" onsubmit="return false;">
+      <input id="searchApps" placeholder="Search Games">
+    </form>
+  </div>
+  <div id="searchMessage" style="display: none;text-align: center;font-size: 30px;margin:20px;"></div>
     <center>
-      <div class="container">
+      <div class="search-results" style="display: flex; justify-content: center; flex-wrap: wrap;">
         <div class="button-container">
           <a href="geforce" class="square_btn">
             <img src="/assets/img/geforcenow.png"><br>GeForce</img>
@@ -98,6 +123,34 @@
     <a href="/credits">Credits</a>
     <a href="https://discord.gg/sWPHCdxCPU">Discord</a>
   </div>
+  <script>
+    document.getElementById('searchApps').addEventListener('input', function(event) {
+      const query = this.value.toLowerCase();
+      const links = document.getElementsByClassName('search-results')[0].getElementsByTagName('a');
+      let foundResults = false;
+
+      for (let i = 0; i < links.length; i++) {
+        const link = links[i];
+        const linkText = link.innerText.toLowerCase();
+
+        if (linkText.includes(query)) {
+          link.style.display = 'block';
+          foundResults = true;
+        } else {
+          link.style.display = 'none';
+        }
+      }
+
+      if (!foundResults) {
+        const message = document.getElementById('searchMessage');
+        message.innerText = 'No Results Found.';
+        message.style.display = 'block';
+      } else {
+        const message = document.getElementById('searchMessage');
+        message.style.display = 'none';
+      }
+    });
+  </script>
 </body>
 
 </html>
