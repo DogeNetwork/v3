@@ -1,6 +1,11 @@
 @font-face {
   font-family: mosk;
-  src: url(mosk.ttf);
+  src: url(/assets/fonts/mosk.ttf);
+}
+
+@font-face {
+  font-family: poppins;
+  src: url(/assets/fonts/poppins.ttf);
 }
 
 .button-6 {
@@ -11,12 +16,12 @@
   box-sizing: border-box;
   color: white;
   cursor: pointer;
-  font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: poppins;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   justify-content: center;
   line-height: 1.25;
-  margin: -8px;
+  margin: -5px;
   min-height: 3rem;
   margin-left: 10px;
   padding: 0px 10px;
@@ -33,17 +38,19 @@
 
 
 .button-6:hover {
-  transform: translateY(-1px);
+  border: transparent 2px rgba(255, 255, 255, 0.596);
+  background-color: rgba(255, 255, 255, 0.411);
+  border-radius: 5px;
+  padding: 0px 10px;
+  transition: 0.3s;
 }
 
 .button-6:active {
   background-color: white;
   color: rgba(0, 0, 0, 0.65);
   transform: translateY(0);
-  border-radius: 13px;
+  border-radius: 5px;
 }
-
-
 
 nav {
   padding: 8px;
@@ -52,11 +59,16 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
+nav p {
+  font-family: poppins;
+}
+
 nav a {
   float: right;
   text-align: center;
   text-decoration: none;
   margin: 3px;
+  font-family: poppins;
 }
 
 
@@ -68,28 +80,26 @@ nav .icon {
 input {
   border: none;
   padding: 20px;
-  width: 500px;
+  width: 520px;
   background-color: black;
   color: white;
   outline: none;
-  font-family: calibri;
+  font-family: poppins;
   font-size: 15px;
   text-align: center;
-  transition: 0.5s;
   border-radius: 30px;
+  transition: 0.1s;
   opacity: 70%;
 }
 
 input:hover {
-  width: 650px;
-  border-radius: 90px;
-  transition: 0.9s;
+  width: 700px;
 }
 
 input:active {
-  border-radius: 30px;
-  transition: 0.5s;
+  width: 720px;
 }
+
 
 nav.responsive a {
   float: none;
@@ -108,6 +118,10 @@ h1 {
   color: white;
   margin-left: 20px;
   margin-top: 2px;
+}
+
+.rounded {
+  border-radius: 10px;
 }
 
 #card1,
@@ -165,7 +179,7 @@ html {
 }
 
 p {
-  font-family: mosk;
+  font-family: poppins;
   color: white;
   font-size: 25px;
   margin-left: 20px;
@@ -173,12 +187,13 @@ p {
 }
 
 a {
-  font-family: mosk;
+  font-family: poppins;
   color: white;
-  font-size: 20px;
+  font-size: 17px;
   margin-left: 20px;
   margin-top: 10px;
 }
+
 
 @font-face {
   font-family: 'mosk';
@@ -201,6 +216,7 @@ h1 {
 }
 
 .footer {
+  text-decoration: none;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -208,7 +224,14 @@ h1 {
   font-size: 16px;
 }
 
+
 .footer>a {
-  font-size: 18px;
   text-decoration: none;
+  font-size: 18px;
+  transition: 0.4s;
+}
+
+.footer>a:hover {
+  color: rgba(255, 255, 255, 0.466);
+  transition: 0.2s;
 }

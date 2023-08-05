@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="/assets/css/app.css">
   <link rel="stylesheet" href="/assets/css/rightclick.css">
   <link href="https://unpkg.com/movement.css/movement.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/323255fd4e.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/script.js/2.0.2/script.min.js" integrity="sha512-UWtTDM6wtl/qutDD6i1JOGZGiEd92dveVzuLl8sMBkMHlOHcbZdexM7ZrKkeaugW7vhqDnWc2pPD/ohEV+BBbg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script>
@@ -88,10 +89,9 @@ if (isLoggedIn === 'correct') {
     <br>
     <!-- removed blanker cuz that's in the right click menu -->
     <a href="/gms/"><button class="button-6">Games</button></a>
-    <a href="/apps/"><button class="button-6">Apps</button></a>
+    <a href="/apps/"><button class="button-6" class="fa-solid fa-user">Apps</button></a>
     <a href="/app"><button class="button-6">Home</button></a>
     <p style="font-size:25px;"><img src="/assets/img/doge.jpg" style="width:22px;height:22px;"> Doge Unblocker</p>
-
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
       <i class="fa fa-bars"></i>
     </a>
@@ -101,8 +101,8 @@ if (isLoggedIn === 'correct') {
     <div data-m="reveal-right" data-m-delay="0.3" data-m-duration="2">
       <br>
       <form id="searchbar">
-        <input type="text" name="url" class="form__input" id="name" style="font-family:calibri;font-size:20px;"
-          placeholder="Explore the unblocked web">
+        <input type="text" name="url" class="form__input" id="name" tag="searchbar" style="font-family:poppins;font-size:20px;"
+          placeholder="Surf the unblocked web">
         <p style="font-size:14px;">Right-Click to access more features</p>
       </form>
     </div>
@@ -115,7 +115,6 @@ if (isLoggedIn === 'correct') {
       <a href="/credits">Credits</a>
       <a href="https://discord.gg/sWPHCdxCPU" target="new">Discord</a>
     </div>
-
 
     <script>
       // Function to generate a random number between 0 and 1
