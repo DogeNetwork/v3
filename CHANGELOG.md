@@ -3,6 +3,8 @@
 # Changelog
 </div>
 
+### 8/5/2023
+- Added loading screen for Apps & Games
 ### 8/4/2023
 - Added search bar for Apps & Games section
 - Updated page background
