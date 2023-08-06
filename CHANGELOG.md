@@ -5,6 +5,7 @@
 
 ### 8/5/2023
 - Added loading screen for Apps & Games
+- Added Now.GG to Apps section (Should it be Games or Apps???)
 ### 8/4/2023
 - Added search bar for Apps & Games section
 - Updated page background
