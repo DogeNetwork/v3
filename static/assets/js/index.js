@@ -4,7 +4,7 @@ const input = document.querySelector("input");
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
   window.navigator.serviceWorker
-    .register("/uv/sw.js", {
+    .register("./sw.js", {
       scope: __uv$config.prefix,
     })
     .then(() => {
