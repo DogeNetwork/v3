@@ -1,15 +1,21 @@
-import Easyviolet from 'easyviolet';
-import express from 'express';
-import path from 'node:path';
-import http from 'node:http';
+import express from "express";
+import http from "node:http";
+import path from "node:path";
+import createBareServer from "@tomphttp/bare-server-node";
 
+const __dirname = process.cwd();
 const server = http.createServer();
-const app = express();
-const ultraviolet = new Easyviolet();
+const app = express(server);
+const bareServer = createBareServer("/bare/");
 
-ultraviolet.httpServer(server);
-server.on('request', (req, res) => { if (!ultraviolet.requiresRoute(req)) app(req, res) });
-app.use(express.static('static', { extensions: ['html'] }));
+app.use(express.json());
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+
+app.use(express.static(path.join(__dirname, "static")));
 app.get('/app', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/app.html'));
 });
@@ -21,4 +27,26 @@ app.use((req, res) => {
   res.sendFile(path.join(process.cwd(), './static/404.html'))
 });
 
-server.listen(8080, () => console.log(`Doge Unblocker is running on port ${server.address().port}`));
+server.on("request", (req, res) => {
+  if (bareServer.shouldRoute(req)) {
+    bareServer.routeRequest(req, res);
+  } else {
+    app(req, res);
+  }
+});
+
+server.on("upgrade", (req, socket, head) => {
+  if (bareServer.shouldRoute(req)) {
+    bareServer.routeUpgrade(req, socket, head);
+  } else {
+    socket.end();
+  }
+});
+
+server.on("listening", () => {
+  console.log(`Doge Unblocker running at port 8080`);
+});
+
+server.listen({
+  port: 8080,
+});
