@@ -1,25 +1,8 @@
 <!DOCTYPE html>
 <head>
+  <title>Loading Site</title>
   <script src="/assets/js/cloakcheck.js"></script>
   <link rel="icon" href="/assets/img/doge.jpg">
-  <script>
-    var pagetitle = "Home | Doge";
-    var newTitle = "Home | Doge";
-    
-    const storedTitle = localStorage.getItem('tabTitle');  
-    if (storedTitle === "Home | Doge") {
-  localStorage.setItem('tabTitle', newTitle);
-} else if (storedTitle === "Gms | Doge") {
-  localStorage.setItem('tabTitle', newTitle);
-  document.title = "Gms | Doge";
-} else if (storedTitle === "Apps | Doge") {
-  localStorage.setItem('tabTitle', newTitle);
-} else {
-  document.title = "My Drive - Google Drive";
-}
-
-    document.title = pagetitle;
-  </script>
 </head>
 <body>
 <iframe src="loading.html" id="siteurl" style="position: fixed; inset: 0px; outline: none; border: none; height: 100%; width: 100%; overflow: hidden;"></iframe>
