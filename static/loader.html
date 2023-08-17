@@ -1,7 +1,29 @@
 <!DOCTYPE html>
 <head>
-  <title>Loading Site</title>
+  <title>Error setting title</title>
   <script src="/assets/js/cloakcheck.js"></script>
+  <script>
+    var pagetitle = "Loader | Doge";
+    var newTitle = "Loader | Doge";
+    
+    const storedTitle = localStorage.getItem('tabTitle');  
+if (storedTitle === "Home | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "Gms | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+  document.title = "Gms | Doge";
+} else if (storedTitle === "Apps | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+}
+else if (storedTitle === "Loader | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+}
+else {
+  document.title = "My Drive - Google Drive";
+}
+
+    document.title = pagetitle;
+  </script>
   <link rel="icon" href="/assets/img/doge.jpg">
 </head>
 <body>
