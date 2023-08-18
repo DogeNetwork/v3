@@ -9,7 +9,7 @@
     <script src="/index.js"></script>
     <script src="/assets/js/cloakcheck.js"></script>
     <script>
-        window.navigator.serviceWorker.register('/uv/sw.js', {
+        window.navigator.serviceWorker.register('/sw.js', {
             scope: __uv$config.prefix
         }).then(() => {
             location.href=__uv$config.prefix + __uv$config.encodeUrl('https://chat.shuttle.rip');
