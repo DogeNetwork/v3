@@ -109,6 +109,10 @@ input:hover {
   width: 700px;
 }
 
+input:focus {
+  width: 700px;
+}
+
 input:active {
   width: 720px;
 }
