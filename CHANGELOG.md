@@ -3,6 +3,10 @@
 # Changelog
 </div>
 
+### 8/27/2023
+- Tab Cloaking now opens up as a normal tab, parent tab redirects to Google Classroom.
+- Small CSS Updates
+- Changed placeholder on proxy input
 ### 8/5/2023
 - Added loading screen for Apps & Games
 - Added Now.GG to Apps section (Should it be Games or Apps???)
