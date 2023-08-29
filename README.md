@@ -18,7 +18,7 @@ Our web proxy supports almost every site. Some popular working sites include:
 - [Visual Studio Code](https://vscode.dev)
 
 ## Analytics
-You can view our changelog [here.](changelog.md)
+You can view our changelog [here.](CHANGELOG.md)
 
 ![Alt](https://repobeats.axiom.co/api/embed/cd46b2adf8ad19db6d9d555dfe9c81de616a5a80.svg "Repobeats analytics image")
 
