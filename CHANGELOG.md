@@ -3,6 +3,8 @@
 # Changelog
 </div>
 
+### 8/28/2023
+- Changed UV Prefix to `/students/lesson`
 ### 8/27/2023
 - Tab Cloaking now opens up as a normal tab, parent tab redirects to Google Classroom.
 - Small CSS Updates
