@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <head>
-  <title>Error setting title</title>
   <script src="/assets/js/cloakcheck.js"></script>
   <script>
     var pagetitle = "Home | Doge";
@@ -24,6 +23,23 @@ else {
 
     document.title = pagetitle;
   </script>
+    <script>
+      var loginValue = localStorage.getItem('login');
+
+if (loginValue === 'enablelogin') {
+  var isLoggedIn = localStorage.getItem('pass');
+
+if (isLoggedIn === 'correct') {
+  console.log("User has successfully logged in.");
+} else {
+  console.log('User has attempted to bypass login screen. Redirecting.');
+  location.href = '/';
+}
+} else {
+  console.log("Login is not enabled.");
+}
+  </script>
+  <title>Home | Doge</title>
   <link rel="icon" href="/assets/img/doge.jpg">
 </head>
 <body>
