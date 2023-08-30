@@ -26,8 +26,9 @@ if (storedTitle === "Home | Doge") {
   document.title = "Gms | Doge";
 } else if (storedTitle === "Apps | Doge") {
   localStorage.setItem('tabTitle', newTitle);
-}
-else if (storedTitle === "Loader | Doge") {
+} else if (storedTitle === "Loader | Doge") {
+  localStorage.setItem('tabTitle', newTitle);
+} else if (storedTitle === "404 | Doge") {
   localStorage.setItem('tabTitle', newTitle);
 }
 else {
