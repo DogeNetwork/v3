@@ -22,6 +22,9 @@ app.get('/app', (req, res) => {
 app.get('/~', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/loader.html'));
 });
+app.get('/credits', (req, res) => {
+  res.sendFile(path.join(process.cwd(), './static/credits.html'));
+});
 app.use((req, res) => {
   res.statusCode = 404;
   res.sendFile(path.join(process.cwd(), './static/404.html'))
