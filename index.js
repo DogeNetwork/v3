@@ -15,7 +15,7 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, "static")));
+app.use(express.static('static', { extensions: ['html'] }));
 app.get('/app', (req, res) => {
   res.sendFile(path.join(process.cwd(), './static/app.html'));
 });
