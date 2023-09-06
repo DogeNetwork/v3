@@ -5,7 +5,7 @@
 
 ### 9/2/2023
 - Added Chess (By Mecharis)
-- Added Subway Surfers (My Mecharis)
+- Added Subway Surfers (By Mecharis)
 ### 8/28/2023
 - Changed UV Prefix to `/students/lesson`
 ### 8/27/2023
