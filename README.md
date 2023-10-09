@@ -1,3 +1,4 @@
+# This version of Doge Unblocker is outdated. Please use [Doge Unblocker V4.](https://github.com/dogenetwork/v4)
 <div align='center'>
   
 ![Alt](static/assets/img/doge.jpg)
