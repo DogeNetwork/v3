@@ -19,3 +19,4 @@
     document.title = newTitle;
   }
 })();
+alert('This version of Doge Unblocker is outdated. Please join our Discord for a newer version.\n\nhttps://dsc.gg/unblockrr');
