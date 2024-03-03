@@ -40,6 +40,3 @@ npm start
 <br>
 #### Join our <a href="https://discord.gg/sWPHCdxCPU">Discord</a> for more ways to deploy (and also for more proxy links.)
 [![Join us on Discord](https://invidget.switchblade.xyz/sWPHCdxCPU?theme=dark)](https://discord.gg/sWPHCdxCPU)
-
-
-
